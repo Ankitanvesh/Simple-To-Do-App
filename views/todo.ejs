@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Germany's title defence</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+   <link href="/Styles.css" rel="stylesheet" type="text/css" />  
+   <script src="/TodoList.js"></script>
+
+  </head>
+
+  <body>
+  <div id="todo-table">
+   <form>
+       <input type="text" name="item" placeholder="Add new item .." required />
+       <button type="submit">Add Item</button>    
+    </form>
+    <ul>
+     <% for(var i=0; i<cmon.length ; i++) { %>
+         <li><%= cmon[i].item %></li>
+     <% } %>
+    </ul>
+
+  </div>
+ 
+
+</body>
+</html>
